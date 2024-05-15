@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twoje Imię - Projektant Wnętrz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header, footer {
+            background-color: #4A4A4A;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        h2 {
+            color: #4A4A4A;
+        }
+        .projects img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .project-item {
+            flex: 1 1 calc(33% - 20px);
+            box-sizing: border-box;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .contact-form button {
+            background-color: #4A4A4A;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #333;
+        }
+        footer {
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Twoje Imię</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">O mnie</a>
+            <a href="#projects">Projekty</a>
+            <a href="#contact">Kontakt</a>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h2>Witaj na mojej stronie</h2>
+            <p>Jestem projektantem wnętrz, który kładzie nacisk na wysoką jakość, ekologię i funkcjonalność. Moim celem jest tworzenie przestrzeni, które są nie tylko piękne, ale także praktyczne i przyjazne dla środowiska.</p>
+        </section>
+        <section id="about">
+            <h2>O mnie</h2>
+            <p>Jestem projektantem wnętrz z pasją do tworzenia eleganckich, funkcjonalnych i ekologicznych przestrzeni. W swojej pracy zwracam uwagę na każdy detal, aby zapewnić najwyższą jakość moich projektów.</p>
+        </section>
+        <section id="projects">
+            <h2>Projekty</h2>
+            <div class="projects">
+                <div class="project-item">
+                    <img src="project1.jpg" alt="Projekt 1">
+                    <p>Opis projektu 1</p>
+                </div>
+                <div class="project-item">
+                    <img src="project2.jpg" alt="Projekt 2">
+                    <p>Opis projektu 2</p>
+                </div>
+                <div class="project-item">
+                    <img src="project3.jpg" alt="Projekt 3">
+                    <p>Opis projektu 3</p>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <form class="contact-form">
+                <input type="text" name="name" placeholder="Twoje imię" required>
+                <input type="email" name="email" placeholder="Twój email" required>
+                <textarea name="message" placeholder="Twoja wiadomość" required></textarea>
+                <button type="submit">Wyślij</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Twoje Imię. Wszystkie prawa zastrzeżone.</p>
+        <p>Znajdź mnie w mediach społecznościowych: 
+            <a href="https://facebook.com">Facebook</a> | 
+            <a href="https://instagram.com">Instagram</a> | 
+            <a href="https://linkedin.com">LinkedIn</a>
+        </p>
+    </footer>
+</body>
+</html>
